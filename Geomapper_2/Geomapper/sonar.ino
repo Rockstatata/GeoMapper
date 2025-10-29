@@ -52,8 +52,8 @@ float get_distance(int trigPin, int echoPin) {
   
   // Optional debugging
   // Serial.print("Avg Distance: ");
-  Serial.print(averageDistance);
-  Serial.println(" cm");
+  // Serial.print(averageDistance);
+  // Serial.println(" cm");
 
   return averageDistance;
 }

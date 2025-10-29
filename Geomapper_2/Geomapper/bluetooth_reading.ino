@@ -13,23 +13,23 @@ void bluetooth() {
   if (SerialBT.available() > 0) {
     x = SerialBT.read();
 
-    Serial.println(x);
+    //Serial.println(x);
 
     // 🔸 Priority check: Handle 'X' for mapping toggle first
     if (x == 'X') {
       if (map_isEnabled()) {
         map_cancelSession();
-        Serial.println("Mapping cancelled via Bluetooth");
+        //Serial.println("Mapping cancelled via Bluetooth");
       } else {
         map_startSession();
-        Serial.println("Mapping started via Bluetooth");
+       // Serial.println("Mapping started via Bluetooth");
       }
       return; // Exit after handling X
     }
 
     // 🔸 If mapping is active, ignore ALL other commands
     if (map_isEnabled()) {
-      Serial.println("Mapping active - ignoring command: " + String(x));
+     // Serial.println("Mapping active - ignoring command: " + String(x));
       return;
     }
 

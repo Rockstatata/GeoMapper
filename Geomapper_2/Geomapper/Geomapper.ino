@@ -79,10 +79,10 @@ extern const struct AdvancedMapSample* map_getAdvancedData();
 
 extern bool mappingEnabled;
 
-// We already use the sonar globals; ensure they are declared extern here:
-extern float front_distance;
-extern float left_distance;
-extern float right_distance;
+// // We already use the sonar globals; ensure they are declared extern here:
+// extern float front_distance;
+// extern float left_distance;
+// extern float right_distance;
 
 // --- PWM constants defined here ---
 const int freq = 500;
